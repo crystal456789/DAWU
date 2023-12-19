@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		
+		<title>大五人格</title>
+		
+		   
+	</head>
+	<body  style="background-image: url('img/beijing.png'); 
+	              background-size: cover; 
+	              background-repeat: no-repeat; 
+	              background-attachment: fixed;">
+			<img src="img/tubiao.png" alt="描述" 
+			     style="width: 500px; height: 500px; display: block; top:150px;left:80px;position: relative;">
+			<img src="img/xingxing.png" alt="描述"
+			     style="width: 200px; height: 200px; display: block; top:-370px;left:90px;position: relative;">
+			<img src="img/zhibiao.png" alt="描述"
+			     style="width: 320px; height: 60px; display: block; top:-315px;left:155px;position: relative;">
+			<img src="img/xin.png" alt="描述"
+			     style="width: 420px; height: 420px; display: block; top:-500px;left:600px;position: relative;">
+			<img src="img/xintiao.png" alt="描述"
+			     style="width: 198px; height: 168px; display: block; top:-880px;left:800px;position: relative;">
+			<img src="img/hu.png" alt="描述"
+			     style="width: 420px; height: 420px; display: block; top:-580px;left:135px;position: relative;">
+			<img src="img/xue.png" alt="描述"
+			     style="width: 420px; height: 420px; display: block; top:-1000px;left:600px;position: relative;">
+			<img src="img/yangqi.png" alt="描述"
+			     style="width: 201px; height: 205px; display: block; top:-1400px;left:800px;position: relative;">	 
+			<img src="img/feibu.png" alt="描述"
+			     style="width: 172px; height: 179px; display: block; top:-1600px;left:360px;position: relative;">	 	
+			<img src="img/maibo.png" alt="描述"
+			     style="width: 408px; height: 216px; display: block; top:-1200px;left:350px;position: relative;">
+			<img src="img/zhun.png" alt="描述"
+			     style="width: 127px; height: 123px; display: block; top:-1380px;left:750px;position: relative;">
+			<img src="img/xinlv.png" alt="描述"
+			     style="width: 141px; height: 82px; display: block; top:-2590px;left:625px;position: relative;">	 
+			<img src="img/huxilv.png" alt="描述"
+			     style="width: 204px; height: 71px; display: block; top:-2170px;left:145px;position: relative;">	 
+			<img src="img/baohedu.png" alt="描述"
+			     style="width: 167px; height: 138px; display: block; top:-2250px;left:625px;position: relative;">	 
+				 
+			<h1 id="text1" style="font-size: 135px; color: #FF5733; font-weight: bold; position: relative; top: -2820px; left: 625px; ">
+			        79<span style="font-size: 74px; vertical-align: baseline;">.53</span>
+			<h1 id="text1" style="font-size: 135px; color: #FF5733; font-weight: bold; position: relative; top: -2580px; left: 145px; ">
+					        14<span style="font-size: 74px; vertical-align: baseline;">.4</span>
+			<h1 id="text1" style="font-size: 135px; color: #FF5733; font-weight: bold; position: relative; top: -2855px; left: 625px; ">
+							        93<span style="font-size: 74px; vertical-align: baseline;">.87</span>
+			
+			
+			
+			
+			
+			
+			
+			 <script>
+			        setInterval(() => {
+			            fetch('url', {
+			                method: 'POST',
+			                headers: {
+			                    'Content-Type': 'application/json',
+			                },
+			                body: JSON.stringify({
+			                    text1: document.getElementById('text1').innerText,
+			                    text2: document.getElementById('text2').innerText,
+			                    text3: document.getElementById('text3').innerText
+			                })
+			            })
+			            .then(response => response.json())
+			            .then(data => {
+			                // 如果需要，根据服务器的响应更新前端
+			                console.log('更新成功:', data);
+			            })
+			            .catch(error => console.error('Error:', error));
+			        }, 10000); // 每10秒发送一次
+			</script>
+	
+	
+	</body>
+	
+</html>
